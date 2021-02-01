@@ -1,0 +1,31 @@
+.page-navigation {
+    background: $warmred;
+    @include flexy($just: center,
+    );
+
+    ul {
+        @include flexy($just: center,
+        );
+        list-style-type: $list;
+
+        li {
+            padding: .5rem;
+            margin: .05rem;
+
+            a {
+                @include flexy($just: center,
+                $aligni: center,
+                $dir: column
+                );
+                color: $darkwood;
+
+                img {
+                    width: 5rem;
+                }
+                h4 {
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
